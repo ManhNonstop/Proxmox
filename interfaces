@@ -29,8 +29,8 @@ iface vmbr0.201 inet static
 	address 10.110.201.181/24
 	gateway 10.110.201.254
 
-auto vmbr0.240
-iface vmbr0.240 inet static
+auto vmbr0.190
+iface vmbr0.190 inet static
 	address 10.10.240.181/24
 
 source /etc/network/interfaces.d/*
