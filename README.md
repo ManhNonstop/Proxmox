@@ -1,5 +1,7 @@
 1. Tạo 3 node Proxmox
 - Cài Proxmox
+- <img width="213" height="244" alt="image" src="https://github.com/user-attachments/assets/2f087131-553b-4d9d-abf9-44fd8398125a" />
+
 - Cấu hình Network như file interfaces, tùy chỉnh theo thực tế IP và vLAN
 - Cấu hình Chrony
 - Cấu hình file hosts
