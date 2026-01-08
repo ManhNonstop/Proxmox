@@ -1,13 +1,15 @@
 SETUP Promox làm vPC mô hình standalone
 
-Bước 1: Cài Proxmox
+Bước 1: Chuẩn bị Proxmox
 
-Bước 2: Setup network
+- Cài Proxmox
+- Setup network
+  + Nếu port dưới Switch là trunk thì cấu hình network theo file: **trunk-interfaces**
+  + Nếu port dưới Switch là access vlan thì cấu hình network theo file: **access-interfaces**
+- Chuẩn bị ISO theo file **pre.md**
 
-Nếu port dưới Switch là trunk thì cấu hình network theo file: **trunk-interfaces**
+Bước 2: Setup vFW bằng pfSense
 
-Nếu port dưới Switch là access vlan thì cấu hình network theo file: **access-interfaces**
+Bước 3: Cài VPN
 
-Bước 3: Upload các ISO Images cần thiết theo file **upload-iso.md**
-
-Bước 4: 
+Bước 4: Cài các VM cần thiết theo nhu cầu
