@@ -12,25 +12,25 @@
 auto lo
 iface lo inet loopback
 
-iface eno1 inet manual
+iface nic0 inet manual
 
-iface eno2 inet manual
+iface nic1 inet manual
 
 auto vmbr0
-iface vmbr0 inet manual
-	bridge-ports eno1
+iface vmbr0 inet static
+	bridge-ports nic0
 	bridge-stp off
 	bridge-fd 0
 	bridge-vlan-aware yes
 	bridge-vids 2-4094
 
 auto vmbr0.201
-iface vmbr0.201 inet static
-	address 10.110.201.181/24
+iface vmbr0.201 inet manual
+	address 10.110.201.30/24
 	gateway 10.110.201.254
 
-auto vmbr0.190
-iface vmbr0.190 inet static
-	address 10.10.240.181/24
+auto vmbr0.16
+iface vmbr0.16 inet static
+	address 172.16.1.0/24
 
 source /etc/network/interfaces.d/*
