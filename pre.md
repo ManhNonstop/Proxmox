@@ -4,6 +4,8 @@ Bước 1: Truy cập proxmox
 
 Bước 2: Datacenter -> node01 -> ISO Images -> Download from URL
 
+Cần tải ISO pfsense bản CE và các ISO khác như Ubuntu hoặc Centos, Windows Server, Windows 10,... tùy theo thực tế triển khai
+
 <img width="1686" height="684" alt="image" src="https://github.com/user-attachments/assets/e4e69b26-b931-4e39-a92c-7a3a61b0397b" />
 
 Bước 3: Download -> Đợi download xong
