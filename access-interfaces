@@ -24,8 +24,4 @@ iface vmbr0 inet static
 	bridge-stp off
 	bridge-fd 0
 
-auto vmbr1
-iface vmbr1 inet manual
-	address 172.16.1.0/24
-
 source /etc/network/interfaces.d/*
