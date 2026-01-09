@@ -25,12 +25,12 @@ iface vmbr0 inet static
 	bridge-vids 2-4094
 
 auto vmbr0.201
-iface vmbr0.201 inet manual
+iface vmbr0.201 inet static
 	address 10.110.201.30/24
 	gateway 10.110.201.254
 
 auto vmbr0.16
 iface vmbr0.16 inet static
-	address 172.16.1.0/24
+	address 172.16.1.250/24
 
 source /etc/network/interfaces.d/*
