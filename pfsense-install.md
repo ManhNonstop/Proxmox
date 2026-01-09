@@ -93,32 +93,64 @@ Bước 2: Cài đặt và cấu hình pfSense
 
   <img width="1228" height="572" alt="image" src="https://github.com/user-attachments/assets/98db62f5-1a59-4e22-89ef-12b9ce82a567" />
 
+  Bắt đầu cấu hình IP cho WAN trước, chọn 1
+
   <img width="1227" height="567" alt="image" src="https://github.com/user-attachments/assets/ef4e4d05-f526-43b9-a778-8599baed230e" />
+
+  Không dùng DHCP nên chọn n để cấu hình tĩnh
 
   <img width="1226" height="566" alt="image" src="https://github.com/user-attachments/assets/df6b07fe-39d1-44bd-aebf-baba0b8107f2" />
 
+  Đặt IP và Gateway cho WAN, sau đó bỏ qua IPv6
+
   <img width="1225" height="565" alt="image" src="https://github.com/user-attachments/assets/a5b50dbc-a7eb-4958-a139-4dd13d24d1d2" />
+
+  Đợi hệ thống load config
 
   <img width="1228" height="568" alt="image" src="https://github.com/user-attachments/assets/65209e79-7bda-4f3a-94d1-c9687578acc9" />
 
+  Làm tương tự cho LAN, sau khi xong sẽ hiển thị như hình
+
   <img width="1230" height="571" alt="image" src="https://github.com/user-attachments/assets/ffd354eb-c778-4c84-92c7-56a307988a65" />
+
+  Về lại trang chính, lúc này WAN và LAN đã có IP đúng
 
   <img width="1226" height="565" alt="image" src="https://github.com/user-attachments/assets/a4173c0d-60f2-443e-a6ff-0d7acbbbfbaf" />
 
+  Vì chưa thông LAN nên chúng ta cần vào pfSense bằng IP WAN nhưng hệ thống đang block, vì thế cần vào Shell để tắt Firewall của pfSense, chọn 8
+
   <img width="1229" height="571" alt="image" src="https://github.com/user-attachments/assets/4521d88e-a590-4e1c-9591-1b274b116157" />
+
+  Sau khi vào Shell xong, gõ lệnh **pfctl -d** để tắt Firewall
 
   <img width="1681" height="891" alt="image" src="https://github.com/user-attachments/assets/623d776a-17c4-466f-ade1-097b4c8d1c8d" />
 
+  Đã vào được UI, lúc này chọn Next để setup pfSense
+
   <img width="1684" height="895" alt="image" src="https://github.com/user-attachments/assets/eff71c95-42dc-446c-b8bb-790998b6eef0" />
+
+  Cấu hình hostname và DNS cho pfSense, sau đó bấm Next
 
   <img width="1684" height="888" alt="image" src="https://github.com/user-attachments/assets/4f1cf01c-994f-421c-be7c-6d882942c961" />
 
+  Setup NTP cho pfSense, sau đó bấn Next
+
   <img width="1680" height="898" alt="image" src="https://github.com/user-attachments/assets/2252d8b2-f016-41e1-93d1-99cee8bea2ef" />
+
+  Setup IP cho WAN, chúng ta xem lại 1 lượt, nếu không vấn đề gì thì Next
 
   <img width="1686" height="896" alt="image" src="https://github.com/user-attachments/assets/e930ccd5-da4d-4841-91d6-578028e1db7d" />
 
+  Setup IP cho LAN, sau đó bấm Next
+
   <img width="1685" height="898" alt="image" src="https://github.com/user-attachments/assets/1e25e733-1179-4c8d-bf7a-6d02b50b981f" />
+
+  Chọn Reload để hệ thống thay đổi cấu hình
 
   <img width="1685" height="893" alt="image" src="https://github.com/user-attachments/assets/edfeac1f-17b6-46b8-a608-037259ded59b" />
 
+  Bấm Finish để hoàn thành cài đặt ban đầu
+
   <img width="1685" height="899" alt="image" src="https://github.com/user-attachments/assets/8575f067-4f72-45dc-80a0-01039f95cc3a" />
+
+  Sau khi xong, màn hình UI của pfSense sẽ giống như thế này, như vậy là đã cài đặt và cấu hình xong pfSense.
